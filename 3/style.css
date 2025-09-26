@@ -1,0 +1,130 @@
+:root {
+  --yellow: #f7a921;
+  --dark: #0f2740;
+  --muted: #f1f1f1;
+  --card: #f5f5f5;
+  --text: #0b1730;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fafafa;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+/* HERO superior */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  gap: 36px;
+  align-items: start;
+}
+.hero-left h1 {
+  font-size: 40px;
+  margin: 0 0 18px;
+  font-weight: 800;
+}
+.accent {
+  width: 40px;
+  height: 6px;
+  background: var(--yellow);
+  display: block;
+  margin: 12px 0;
+}
+.hero-left p { max-width: 460px; color: #333; }
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: var(--yellow);
+  border-radius: 8px;
+  color: var(--dark);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.card {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(12,24,40,0.04) inset;
+}
+.card small {
+  display: block;
+  color: var(--dark);
+  font-weight: 600;
+}
+.card h3 { margin: 6px 0 0; font-size: 18px; }
+
+/* Sección inferior */
+.section {
+  margin-top: 56px;
+  padding: 48px 0;
+  background: var(--muted);
+}
+.section-inner { max-width: 1100px; margin: 0 auto; }
+
+.feature {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+}
+.feature-left {
+  background: var(--dark);
+  color: #fff;
+  padding: 40px 48px;
+  border-radius: 6px 0 0 6px;
+}
+
+.feature-left h2 {
+  font-size: 32px;
+  margin: 0 0 18px;
+  white-space: nowrap;   
+}
+
+.feature-left small {
+  color: #b5c2d6;
+  display: block;
+  margin-bottom: 32px;
+  font-size: 16px;       
+  letter-spacing: 0.5px;
+}
+.divider {
+  width: 48px;
+  height: 6px;
+  background: #274159;
+  margin: 18px 0;
+}
+.feature-left p {
+  font-size: 15px;
+  color: #cbd7e4;
+}
+.btn-light {
+  display: inline-block;
+  padding: 10px 14px;
+  background: var(--yellow);
+  color: var(--dark);
+  border-radius: 8px;
+  margin-top: 26px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.feature-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 6px 6px 0;
+}
